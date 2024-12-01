@@ -1,0 +1,470 @@
+.navbar {
+  background-color: #0c553b;
+  padding: 20px 0 !important;
+}
+.navbar span {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 10px;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+.navbar-brand .navbar-logo {
+  width: 100px;
+  height: 60px;
+}
+.navbar-brand {
+  display: flex;
+ 
+}
+.navbar-brand .navbar-logo {
+  width: 15%;
+}
+.navbar-brand .navbar-logo img {
+  width: 100%;
+}
+.navbar-nav .nav-item .nav-link {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+  margin: 0 10px;
+  border-bottom: 2px solid #0c553b;
+}
+
+.navbar-nav .nav-item .nav-link:focus {
+  color: white;
+  border-bottom: 2px solid white;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+/* hero sec */
+.hero-sec {
+  background-image: url(./asset/Frame\ 849\ \(1\).png);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-content {
+  padding-bottom: 160px;
+}
+.hero-content h2 {
+  color: white;
+  font-size: 70px;
+  text-transform: capitalize;
+}
+.hero-content p {
+  color: white;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.hero-content .tele-img {
+  width: 10%;
+  
+}
+.hero-content .tele-img img {
+  width: 100%;
+  border: 4px solid white;
+  border-radius: 100%;
+
+}
+ .hero-img{
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+.hero-img img{
+  width: 100% !important;
+}
+@media screen and (max-width: 786px) {
+  
+  .hero-content {
+ 
+    padding-bottom: 20px !important;
+  }
+  .hero-content h2 {
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .hero-content p {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .hero-img{
+    width: 80%;
+    margin: 0 auto;
+  }
+.hero-icon {
+    justify-content: center !important;
+    
+  }
+}
+/* about section */
+.about-section{
+  background-color: #012324;
+  padding-bottom: 50px;
+}
+.about-section h2{
+  padding-top: 50px;
+  text-transform: capitalize;
+  font-size: 60px;
+  color: #eac35e;
+}
+.about-section p{
+  padding-top: 30px;
+  text-transform: capitalize;
+  font-size: 30px;
+  color: white;
+}
+.about-section .about-img{
+width: 60%;
+margin: 0 auto;
+}
+.about-section .about-img img{
+  width: 100%;
+  }
+ 
+  
+  /* tokenomics */
+  .tokenomics{
+    background-image: url(./asset/CTA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    background-color: #0c553b;
+    padding-bottom: 60px;
+  }
+ 
+  .tokennmics h2{
+    font-size: 40px;
+      color: white;
+      font-family: "Rock Salt", cursive;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: capitalize;
+      text-align: center;
+      padding: 50px 0;
+  }
+  .input-One {
+    border: 4px solid #199bb1;
+    background-color: #161616;
+    background: transparent;
+  }
+  .input-One h3 {
+    font-size: 30px;
+    padding-left: 20px;
+    color: #f7b613;
+    text-transform: capitalize;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 0;
+  
+  }
+  .input-One p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: white;
+  }
+  .input2 {
+    border: 4px solid #199bb1;
+    padding: 10px;
+   background: transparent;
+   
+  }
+  .input2 h3 {
+    margin: 0;
+    font-weight: 800;
+    color: #f7b613;
+  }
+  .input2 h4 {
+    margin: 0;
+    color: white;
+  }
+  @media screen and (max-width:600px) {
+    .input-One p {
+   font-size: 12px;
+    }
+  }
+  /* raoadmap */
+  .roadmap{
+    background-color:#0d1f19 ;
+    height: auto;
+  }
+  .roadmap h2{
+    text-transform: capitalize;
+    font-size: 60px;
+    text-align: center;
+    padding: 80px 0;
+    color: white;
+  }
+  /* From Uiverse.io by vamsidevendrakumar */ 
+.cards {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-inners {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.cards:hover .card-inners {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.card-fronts,
+.card-backs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-fronts {
+  background-color: #6A2C70;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #6A2C70;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.card-backs {
+  background-color: #F08A5D;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #F08A5D;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+  text-transform: capitalize;
+}
+.card-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+gap: 120px;
+}
+/*  */
+/* From Uiverse.io by ilkhoeri */ 
+.wrappere {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.innere {
+  --w: 100px;
+  --h: 150px;
+  --translateZ: calc((var(--w) + var(--h)) + 0px);
+  --rotateX: -15deg;
+  --perspective: 1000px;
+  position: absolute;
+  width: var(--w);
+  height: var(--h);
+  top: 25%;
+  left: calc(50% - (var(--w) / 2) - 2.5px);
+  z-index: 2;
+  transform-style: preserve-3d;
+  transform: perspective(var(--perspective));
+  animation: rotating 20s linear infinite; /* */
+}
+@keyframes rotating {
+  from {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+      rotateY(0);
+  }
+  to {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+      rotateY(1turn);
+  }
+}
+
+.carde {
+  position: absolute;
+  border: 2px solid rgba(var(--color-card));
+  border-radius: 12px;
+  overflow: hidden;
+  inset: 0;
+  transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
+    translateZ(var(--translateZ));
+}
+
+.imge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #0000
+    radial-gradient(
+      circle,
+      rgba(var(--color-card), 0.2) 0%,
+      rgba(var(--color-card), 0.6) 80%,
+      rgba(var(--color-card), 0.9) 100%
+    );
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.imge img {
+width: 100%;
+cursor: pointer;
+
+}
+/* From Uiverse.io by gagan-gv */ 
+.btn {
+  display: block;
+  padding: 0.7em 1em;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: #d4af37;
+  letter-spacing: 0.1em;
+  font-family: monospace;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  width: 30%;
+  margin: 0 auto;
+  color: white;
+}
+
+.cube {
+  position: relative;
+  transition: all 0.5s;
+  color: white;
+}
+
+.cube .bg-top {
+  position: absolute;
+  height: 10px;
+  background: #d4af37;
+  bottom: 100%;
+  left: 5px;
+  right: -5px;
+  transform: skew(-45deg, 0);
+  margin: 0;
+  transition: all 0.4s;
+}
+
+.cube .bg-top .bg-inner {
+  bottom: 0;
+}
+
+.cube .bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background: #d4af37;
+  transition: all 0.4s;
+}
+
+.cube .bg-right {
+  position: absolute;
+  background: #d4af37;
+  top: -5px;
+  z-index: 0;
+  bottom: 5px;
+  width: 10px;
+  left: 100%;
+  transform: skew(0, -45deg);
+  transition: all 0.4s;
+}
+
+.cube .bg-right .bg-inner {
+  left: 0;
+}
+
+.cube .bg-inner {
+  background: #6a2c70;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+}
+
+.cube .text {
+  position: relative;
+  transition: all 0.4s;
+  color: white;
+  font-size: 30px;
+}
+
+.cube:hover .bg-inner {
+  background: #d4af37;
+  transition: all 0.4s;
+}
+
+.cube:hover .text {
+  color: white;
+  transition: all 0.4s;
+}
+
+.cube:hover .bg-right,
+.cube:hover .bg,
+.cube:hover .bg-top {
+  background: white;
+}
+
+.cube:active {
+  z-index: 9999;
+  animation: bounce 0.1s linear;
+}
+
+@keyframes bounce {
+  50% {
+    transform: scale(0.9);
+  }
+}
+/* footer section */
+.footer-section{
+  background-image: url(./asset/Frame\ 849\ \(1\).png);
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-section h4{
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  padding-top: 30px;
+}
+.footer-section p{
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
