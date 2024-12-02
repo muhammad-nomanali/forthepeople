@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #003366;
+  background-color: black;
   padding: 20px 0 !important;
 }
 .navbar span {
@@ -27,9 +27,9 @@
 .navbar-nav .nav-item .nav-link {
   font-size: 20px;
   text-transform: capitalize;
-  color: white;
+  color: #e8b746;
   margin: 0 10px;
-  border-bottom: 2px solid #003366;
+  border-bottom: 2px solid black;
 }
 
 .navbar-nav .nav-item .nav-link:focus {
@@ -53,7 +53,7 @@ position: relative;
 }
 .hero-sec::before{
   content: "";
-  background-color: #1032553d;
+  background-color: rgba(0, 0, 0, 0.178);
   position: absolute;
   top: 0;
   left: 0;
@@ -121,7 +121,7 @@ position: relative;
 }
 /* about section */
 .about-section{
-  background-color: #103255;
+  background-color: black;
   ;
   padding-bottom: 50px;
 }
@@ -141,7 +141,7 @@ position: relative;
   padding-top: 10px;
   text-transform: capitalize;
   font-size: 20px;
-  color: white;
+  color: #eac35e;
   text-align: center;
 }
 .about-cont{
@@ -161,13 +161,13 @@ margin: 0 auto;
   
   /* tokenomics */
   .tokenomics{
-    background-image: url(./asset/CTA\ \(1\).png);
+    background-image: url(./asset/CTA\ \(2\).png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     width: 100%;
     height: auto;
-    background-color:#003366 ;
+    background-color:black ;
     padding-bottom: 60px;
   }
  
@@ -187,11 +187,9 @@ margin: 0 auto;
   .input-One h3 {
     font-size: 30px;
     padding-left: 20px;
-    color: #f7b613;
+    color: #e8b746;
     text-transform: capitalize;
-    font-family: "Rock Salt", cursive;
-    font-weight: 400;
-    font-style: normal;
+  
     padding: 10px 0;
   
   }
@@ -209,7 +207,7 @@ margin: 0 auto;
   .input2 h3 {
     margin: 0;
     font-weight: 800;
-    color: #f7b613;
+    color: #e8b746;
   }
   .input2 h4 {
     margin: 0;
@@ -222,7 +220,7 @@ margin: 0 auto;
   }
   /* raoadmap */
   .roadmap{
-    background-color:#103255 ;
+    background-color:black ;
     height: auto;
   }
   .roadmap h2{
@@ -261,11 +259,11 @@ margin: 0 auto;
 }
 
 .card-fronts {
-  background-color: #6A2C70;
+  background-color:#e8b746;
   color: #fff;
   display: flex;
   align-items: center;
-  border: 10px solid #6A2C70;
+  border: 10px solid white;
   border-radius: 10px;
   justify-content: center;
   font-size: 24px;
@@ -408,13 +406,13 @@ cursor: pointer;
   bottom: 0;
   top: 0;
   right: 0;
-  background: #d4af37;
+  background: white;
   transition: all 0.4s;
 }
 
 .cube .bg-right {
   position: absolute;
-  background: #d4af37;
+  background: white;
   top: -5px;
   z-index: 0;
   bottom: 5px;
@@ -429,7 +427,7 @@ cursor: pointer;
 }
 
 .cube .bg-inner {
-  background: #6a2c70;
+  background: #e8b746;
   position: absolute;
   left: 2px;
   right: 2px;
@@ -445,19 +443,19 @@ cursor: pointer;
 }
 
 .cube:hover .bg-inner {
-  background: #d4af37;
+  background: white;
   transition: all 0.4s;
 }
 
 .cube:hover .text {
-  color: white;
+  color: #e8b746;
   transition: all 0.4s;
 }
 
 .cube:hover .bg-right,
 .cube:hover .bg,
 .cube:hover .bg-top {
-  background: white;
+  background: #e8b746;
 }
 
 .cube:active {
@@ -472,7 +470,7 @@ cursor: pointer;
 }
 /* footer section */
 .footer-section{
- background: linear-gradient(#103255,#060425,#11063D,#08284B,#16215E);
+ background:black;
   width: 100%;
 
   background-position: center;
@@ -483,7 +481,7 @@ cursor: pointer;
   font-size: 50px;
   text-align: center;
   text-transform: capitalize;
-  color: white;
+  color: #e8b746;
   padding-top: 30px;
 }
 .footer-section p{
