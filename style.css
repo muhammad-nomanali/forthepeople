@@ -367,8 +367,8 @@ margin: 0 auto;
 }
 
 .card-fronts {
-  background-color:#e8b746;
-  color: #fff;
+  background-color:white;
+  color: black;
   display: flex;
   align-items: center;
   border: 10px solid white;
@@ -376,6 +376,7 @@ margin: 0 auto;
   justify-content: center;
   font-size: 24px;
   transform: rotateY(0deg);
+  font-weight: bold;
 }
 
 .card-backs {
