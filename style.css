@@ -230,8 +230,29 @@ margin: 0 auto;
 .about-section .about-img img{
   width: 100%;
   }
- 
+ .about-content h2{
+  font-size: 40px;
+  color: #eac35e;
+  margin: 0;
+ }
+ .about-content li  {
+  color: white;
+  margin: 0;
+ }
+ .about-content li  span {
+  color: #eac35e;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 10px;
+ } 
+ .about-content p{
+  color: white;
+  text-align: left;
+ }
   @media screen and (max-width: 786px) {
+    .about-content h2{
+      font-size: 50px !important;
+    }
     .about-section h2{
       padding-top: 50px;
       text-transform: capitalize;
