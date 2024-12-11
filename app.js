@@ -1,0 +1,17 @@
+const moveButton = document.getElementById('moveButton');
+
+const content = document.querySelector('.hero-content');
+
+let isMoved = false;
+
+moveButton.addEventListener('click', () => {
+  if (!isMoved) {
+   
+    content.style.transform = 'translateY(100px)'; // Move content down
+    isMoved = true;
+  } else {
+ 
+    content.style.transform = 'translateY(0)'; // Reset content position
+    isMoved = false;
+  }
+});
