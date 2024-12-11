@@ -7,7 +7,7 @@ let isMoved = false;
 moveButton.addEventListener('click', () => {
   if (!isMoved) {
    
-    content.style.transform = 'translateY(150px)'; // Move content down
+    content.style.transform = 'translateY(200px)'; // Move content down
     isMoved = true;
   } else {
  
