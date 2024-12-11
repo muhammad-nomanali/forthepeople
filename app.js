@@ -1,13 +1,13 @@
 const moveButton = document.getElementById('moveButton');
 
-const content = document.querySelector('.hero-content');
+const content = document.querySelector('.content');
 
 let isMoved = false;
 
 moveButton.addEventListener('click', () => {
   if (!isMoved) {
    
-    content.style.transform = 'translateY(100px)'; // Move content down
+    content.style.transform = 'translateY(150px)'; // Move content down
     isMoved = true;
   } else {
  
