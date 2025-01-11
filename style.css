@@ -124,13 +124,13 @@ height: 100vh;
 }
 .hero-content .tele-imgs img {
   width: 100%;
-  border: 4px solid white;
+ 
   border-radius: 100%;
 
 }
 .hero-content .tele-img img {
   width: 100%;
-  border: 4px solid white;
+ 
   border-radius: 100%;
 
 }
@@ -624,6 +624,11 @@ cursor: pointer;
     color: white;
   }
   }
+  @media screen and (max-width: 786px) {
+    .imgI{
+      width: 25%;
+    }
+    }
   /*  */
    /* Style for the dropdown menu */
    .dropdown-content {
@@ -681,8 +686,8 @@ cursor: pointer;
 
 /* Style for the telegram icon */
 .dropdowns .telegram-icon {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
 }
 
