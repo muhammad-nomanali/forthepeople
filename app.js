@@ -72,7 +72,7 @@ moveButton.addEventListener('click', () => {
   }
 
 // %5555555555555555555555555555555
-const endDate = "20 January 2025 09:00:00 PM"
+const endDate = "21 January 2025 09:00:00 PM"
 
 document.getElementById("end-date").innerText = endDate;
 const inputs = document.querySelectorAll("input")
