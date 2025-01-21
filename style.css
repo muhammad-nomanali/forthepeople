@@ -701,68 +701,49 @@ cursor: pointer;
   
   /* timer css */
   
-  
-  .overlay {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  
-  }
-  .main{
-   
-    width: 80%;
-    margin: 0 auto;
-  }
-  .title {
-    margin-top: 10px;
-   
-    color: white;
-    text-align: center;
-    font-size: 2.5rem;
-    display: none;
-  }
-  
-  .col {
-    margin-top: 20px;
-    width: 90%;
+  .timer-count {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    color: white;
+    align-items: center;
+
+    text-align: center;
   }
   
-  .col div {
-    width: 250px;
-    text-align: center;
-    
+  .timer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
   }
   
-  input {
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: transparent;
-    border-radius: 5px;
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
-  }
-  /*  */
-  .timer {
+  .countdown {
     display: flex;
-    color: white;
-    justify-content: space-between;
-    padding: 30px;
+    gap: 15px;
   }
-  .timer-sec{
-    width: 50%;
-    margin: 0 auto;
-    border: 4px solid red;
-   
+  
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .timer div {
-    font-size: 2em;
-    margin: 0 5px;
+  
+  .number {
+    font-size: 3rem;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
+  
+  .label {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #aaa;
+  }
+
+  
   
  

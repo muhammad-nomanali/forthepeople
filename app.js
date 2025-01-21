@@ -72,43 +72,37 @@ moveButton.addEventListener('click', () => {
   }
 
 // %5555555555555555555555555555555
-const endDate = "21 January 2025 10:00:00 AM"
+// Set the target date and time
+const targetDate = new Date();
+targetDate.setHours(targetDate.getHours() + 15); // Add 15 hours
+targetDate.setMinutes(targetDate.getMinutes() + 1); // Add 1 minute
+targetDate.setSeconds(targetDate.getSeconds() + 2); // Add 2 seconds
 
-document.getElementById("end-date").innerText = endDate;
-const inputs = document.querySelectorAll("input")
-    // const clock = () => {
+function updateCountdown() {
+  const now = new Date();
+  const diff = targetDate - now;
 
-// }
+  if (diff <= 0) {
+    document.querySelector('.countdown').innerHTML = "<h2>Time's Up!</h2>";
+    return;
+  }
 
-function clock() {
-    const end = new Date(endDate)
-    const now = new Date()
-    const diff = (end - now) / 1000;
+  const hours = Math.floor(diff / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-    if (diff < 0) return;
-
-    // convert into days;
-    inputs[0].value = Math.floor(diff / 3600 / 24);
-    inputs[1].value = Math.floor(diff / 3600) % 24;
-    inputs[2].value = Math.floor(diff / 60) % 60;
-    inputs[3].value = Math.floor(diff) % 60;
+  document.getElementById('days').textContent = '00'; // No days for this timer
+  document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+  document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+  document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
 }
 
-// initial call
-clock()
+// Update countdown every second
+setInterval(updateCountdown, 1000);
 
-/**
- *  1 day = 24 hrs
- *  1 hr = 60 mins
- *  60 min = 3600 sec
- */
+// Initialize countdown
+updateCountdown();
 
-setInterval(
-    () => {
-        clock()
-    },
-    1000
-)
 
 
 
