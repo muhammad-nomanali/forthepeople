@@ -73,10 +73,20 @@ moveButton.addEventListener('click', () => {
 
 // %5555555555555555555555555555555
 // Set the target date and time
-const targetDate = new Date();
-targetDate.setHours(targetDate.getHours() + 15); // Add 15 hours
-targetDate.setMinutes(targetDate.getMinutes() + 1); // Add 1 minute
-targetDate.setSeconds(targetDate.getSeconds() + 2); // Add 2 seconds
+// Check if targetDate already exists in localStorage
+let targetDate = localStorage.getItem('targetDate');
+
+if (!targetDate) {
+  // Set targetDate to 15 hours, 1 minute, and 2 seconds from now if not already set
+  targetDate = new Date();
+  targetDate.setHours(targetDate.getHours() + 15); // Add 15 hours
+  targetDate.setMinutes(targetDate.getMinutes() + 1); // Add 1 minute
+  targetDate.setSeconds(targetDate.getSeconds() + 2); // Add 2 seconds
+  localStorage.setItem('targetDate', targetDate);
+} else {
+  // Parse targetDate from localStorage
+  targetDate = new Date(targetDate);
+}
 
 function updateCountdown() {
   const now = new Date();
@@ -84,6 +94,7 @@ function updateCountdown() {
 
   if (diff <= 0) {
     document.querySelector('.countdown').innerHTML = "<h2>Time's Up!</h2>";
+    localStorage.removeItem('targetDate'); // Clear targetDate once the countdown ends
     return;
   }
 
@@ -102,6 +113,7 @@ setInterval(updateCountdown, 1000);
 
 // Initialize countdown
 updateCountdown();
+
 
 
 
