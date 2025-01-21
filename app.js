@@ -75,45 +75,47 @@ moveButton.addEventListener('click', () => {
 // Set the target date and time
 // Check if targetDate already exists in localStorage
 // Set a fixed universal target time in UTC
+// Check if targetDate is already stored in localStorage
 let targetDate = localStorage.getItem('targetDate');
 
 if (!targetDate) {
-  // Set a shared fixed target time in UTC
-  // Example: January 21, 2025, at 12:00:00 UTC
-  targetDate = "2025-01-21T12:00:00Z";
-  localStorage.setItem('targetDate', targetDate); // Store it locally
+  // If not, set a fixed target date in UTC
+  targetDate = "2025-01-21T12:00:00Z"; // Replace with your desired target date
+  localStorage.setItem('targetDate', targetDate); // Store the target date in localStorage
 } else {
   targetDate = new Date(targetDate); // Parse targetDate from localStorage
 }
 
 function updateCountdown() {
   const now = new Date(); // Current local time
-  const diff = new Date(targetDate) - now; // Calculate time difference in milliseconds
+  const diff = new Date(targetDate) - now; // Calculate the time difference in milliseconds
 
   if (diff <= 0) {
     document.querySelector('.countdown').innerHTML = "<h2>Time's Up!</h2>";
-    localStorage.removeItem('targetDate'); // Clear targetDate once the countdown ends
+    localStorage.removeItem('targetDate'); // Clear targetDate when the countdown ends
     return;
   }
 
-  // Calculate hours, minutes, and seconds
+  // Calculate remaining time in days, hours, minutes, and seconds
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-  // Update the DOM elements
+  // Update the DOM with calculated values
   document.getElementById('days').textContent = String(days).padStart(2, '0');
   document.getElementById('hours').textContent = String(hours).padStart(2, '0');
   document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
   document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
 }
 
-// Update countdown every second
+// Call updateCountdown every second
 setInterval(updateCountdown, 1000);
 
-// Initialize countdown
+// Initialize the countdown on page load
 updateCountdown();
+
+
 
 
 
