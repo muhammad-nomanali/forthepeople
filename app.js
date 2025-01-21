@@ -115,7 +115,27 @@ setInterval(
 )
 
 
-
+function copyText() {
+    // Get the text content from the paragraph element
+    const textToCopy = document.getElementById("textToCopy").textContent;
+  
+    // Create a temporary input element to hold the text
+    const tempInput = document.createElement("input");
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+  
+    // Select the text in the input and copy it
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); // For mobile devices
+    document.execCommand("copy");
+  
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+  
+    // Optional: Show an alert or visual feedback
+    alert("Text copied to clipboard!");
+  }
+  
 
 
 

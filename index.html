@@ -13,6 +13,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -224,11 +225,13 @@
               <div class="col-lg-6 col-md-12">
                 <h3 class="m-0">contract Address</h3>
               </div>
-              <div class="col-lg-6 col-md-12">
-                <p class="m-0 overflow-hidden pb-md-3">
+              <div class="col-lg-6 col-md-12 d-flex">
+                <p class="m-0 overflow-hidden pb-md-3" id="textToCopy">
                   14jbQtdS9pdqDofSfRcbNRwiMtGi4AfeTftKyyqPsRZF
                 </p>
+                <button style="margin-left: 10px;" onclick="copyText()"><i class="bi bi-copy"></i></button>
               </div>
+              
             </div>
             <div
               class="row mt-5 justify-content-between"
